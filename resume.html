@@ -20,7 +20,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="w3.css"> 
 	<style>
-	body, html {
+body, head, html {
 		height: 100%;
 		background-color: #252f2b;
 		}
@@ -29,7 +29,15 @@
 		font-family: 'Rubik Mono One', sans-serif;
 		font-size: 33.3px;
 		font-weight: 200;
- 		color: #2dc44d;
+ 		color: #09e838;
+		padding-top: 5%;
+		}
+		
+		h1:visited {
+		font-family: 'Rubik Mono One', sans-serif;
+		font-size: 33.3px;
+		font-weight: 200;
+ 		color: #09e838;
 		padding-top: 5%;
 		}
 		
@@ -64,10 +72,11 @@
 		color: darkgray;
 		}
 		
-		a:link {
+		a {
 		font-family: 'Roboto Mono', monospace;
 		background-color: transparent;
 		text-decoration: none;
+		color: #09e838;
 		}
 
 		a:hover {
@@ -79,11 +88,56 @@
 		font-family: 'Roboto Mono', monospace;
 		background-color: transparent;
 		text-decoration: none;
-		color: #2dc44d;
+		}
+
+		div.gallery {
+		border: 0px dotted #ccc;
+		}
+	
+		div.gallery:hover {
+		border: 1px dotted #777;
+		}
+	
+		div.gallery img {
+		width: 100%;
+		height: auto;
+		}
+		
+		div.desc {
+		padding: 15px;
+		text-align: center;
+		}
+		
+		* {
+		box-sizing: border-box;
+		}
+		
+		.responsive {
+		padding: 0 6px;
+		float: left;
+		width: 24.99999%;
+		}
+		
+		@media only screen and (max-width: 700px) {
+		.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+		  }
+		}
+		
+		@media only screen and (max-width: 500px) {
+		.responsive {
+		width: 100%;
+			}
+		}
+	
+		.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
 		}
 		
 		</style>
-
 </head>
 		<!--
 		+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
